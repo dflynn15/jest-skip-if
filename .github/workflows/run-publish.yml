@@ -1,5 +1,8 @@
 name: Package build 
-on: [push]
+on:
+  push
+    branches:
+      - main 
 
 jobs:
   build:
@@ -14,6 +17,5 @@ jobs:
     - run: yarn test
     - run: yarn build 
     - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          dry-run: true
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
