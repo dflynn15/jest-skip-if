@@ -2,7 +2,7 @@
   "name": "jest-skip-if",
   "version": "0.1.0",
   "description": "Allow for a condition to skip or run specs in Jest",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "esbuild index.ts --bundle --outfile=dist/index.js",
     "test": "jest",

@@ -14,4 +14,9 @@ jobs:
         node-version: 18
         cache: 'npm'
     - run: yarn install --immutable
+    - run: yarn test
     - run: yarn build 
+    - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          dry-run: true
