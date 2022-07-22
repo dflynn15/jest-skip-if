@@ -1,0 +1,25 @@
+{
+  "name": "jest-skip-if",
+  "version": "0.1.0",
+  "description": "Allow for a condition to skip or run specs in Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "types": "tsc"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "Daniel Flynn",
+  "license": "ISC",
+  "peerDependencies": {
+    "jest": "^28.1.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.6",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
+}
