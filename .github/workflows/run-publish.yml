@@ -1,8 +1,5 @@
 name: Package build 
-on:
-  push:
-    branches:
-      - main 
+on: push
 
 jobs:
   build:
